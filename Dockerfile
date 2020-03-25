@@ -1,6 +1,6 @@
 FROM python:alpine
 
-LABEL maintainer="mortea15@github"
+LABEL maintainer="Morten Amundsen <me@mortenamundsen.me>"
 
 ENV USER=abc
 ENV PUID=1000
@@ -35,8 +35,6 @@ COPY . /usr/src/app
 
 EXPOSE 8080
 
-VOLUME ["/youtube-dl"]
-
 USER $USER
 
-CMD ["uvicorn", "youtube-dl-server:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "youtag-dl:app", "--host", "0.0.0.0", "--port", "8080"]
