@@ -1,6 +1,6 @@
-![Docker Stars Shield](https://img.shields.io/docker/stars/mortea15/youtag-dl.svg?style=flat-square)
-![Docker Pulls Shield](https://img.shields.io/docker/pulls/mortea15/youtag-dl.svg?style=flat-square)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/mortea15/youtag-dl/master/LICENSE)
+![Docker Stars Shield](https://img.shields.io/docker/stars/netr0m/youtag-dl.svg?style=flat-square)
+![Docker Pulls Shield](https://img.shields.io/docker/pulls/netr0m/youtag-dl.svg?style=flat-square)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/netr0m/youtag-dl/master/LICENSE)
 
 # youtag-dl
 *Yet another fork of manbearwiz/youtube-dl-server, with tagging functionality*
@@ -16,7 +16,7 @@ Created to make your YouTube music-downloading tasks chiller. Specify (sub)direc
 This example uses the docker run command to create the container to run the app. Here we also use host networking for simplicity. Also note the `-v` argument. This directory will be used to output the resulting videos
 
 ```shell
-$ docker run -d --net="host" --name ytdl -v <music_directory>:/music mortea15/youtag-dl
+$ docker run -d --net="host" --name ytdl -v <music_directory>:/music netr0m/youtag-dl
 ```
 
 ### Docker Compose
@@ -27,7 +27,7 @@ This is an example service definition that could be put in `docker-compose.yml`.
 version: 3
 services:
   ytdl:
-    image: "mortea15/youtag-dl"
+    image: "netr0m/youtag-dl"
     container_name: ytdl
     restart: always
     ports:
