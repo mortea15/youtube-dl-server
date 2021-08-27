@@ -1,10 +1,10 @@
 FROM python:alpine
 
-LABEL maintainer="Morten Amundsen <me@mortenamundsen.me>"
+LABEL maintainer="netr0m <netr0m@pm.me>"
 
 ENV USER=abc
-ENV PUID=1000
-ENV PGID=985
+ENV PUID=911
+ENV PGID=911
 
 RUN addgroup -g $PGID $USER
 RUN adduser \
