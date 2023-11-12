@@ -5,4 +5,4 @@ starlette==0.31.1
 uvicorn[standard]==0.23.2; platform_machine == 'x86_64'
 uvicorn==0.23.2; platform_machine != 'x86_64'
 yt-dlp==2023.10.13
-pytaglib
+pytaglib==2.0.0
