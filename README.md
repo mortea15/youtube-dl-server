@@ -84,7 +84,7 @@ fetch(`http://${host}:8080/q`, {
 
 #### Bookmarklet
 
-Add the following bookmarklet to your bookmark bar so you can conviently send the current page url to your youtube-dl-server instance.
+Add the following bookmarklet to your bookmark bar so you can conviently send the current page url to your youtag-dl instance.
 
 ```javascript
 javascript:!function(){fetch("http://${host}:8080/q",{body:new URLSearchParams({url:window.location.href,format:"bestaudio"}),method:"POST"})}();
