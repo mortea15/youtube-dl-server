@@ -3,8 +3,8 @@ FROM python:alpine
 LABEL maintainer="netr0m <netr0m@pm.me>"
 
 ENV USER=abc
-ENV PUID=911
-ENV PGID=911
+ENV PUID=1000
+ENV PGID=1000
 
 RUN addgroup -g $PGID $USER
 RUN adduser \
