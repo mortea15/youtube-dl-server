@@ -1,5 +1,3 @@
-![Docker Stars Shield](https://img.shields.io/docker/stars/netr0m/youtag-dl.svg?style=flat-square)
-![Docker Pulls Shield](https://img.shields.io/docker/pulls/netr0m/youtag-dl.svg?style=flat-square)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/netr0m/youtag-dl/master/LICENSE)
 
 # youtag-dl
@@ -16,7 +14,7 @@ Created to make your YouTube music-downloading tasks chiller. Specify (sub)direc
 This example uses the docker run command to create the container to run the app. Here we also use host networking for simplicity. Also note the `-v` argument. This directory will be used to output the resulting videos
 
 ```shell
-$ docker run -d --net="host" --name ytdl -v <music_directory>:/music netr0m/youtag-dl
+$ docker run -d --net="host" --name ytdl -v <music_directory>:/music ghcr.io/netr0m/youtag-dl
 ```
 
 ### Docker Compose
@@ -95,6 +93,6 @@ This is a fork of [`youtube-dl-server`](https://github.com/manbearwiz/youtube-dl
 
 The server uses [`starlette`](https://github.com/encode/starlette) for the web framework and [`youtube-dl`](https://github.com/rg3/youtube-dl) to handle the downloading. The integration with youtube-dl makes use of their [python api](https://github.com/rg3/youtube-dl#embedding-youtube-dl).
 
-This docker image is based on [`python:alpine`](https://registry.hub.docker.com/_/python/) and consequently [`alpine:3.8`](https://hub.docker.com/_/alpine/).
+This docker image is based on [`python:alpine`](https://registry.hub.docker.com/_/python/) and consequently [`alpine:3.18`](https://hub.docker.com/_/alpine/).
 
 [1]:youtag-dl.png
