@@ -21,7 +21,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            kmb32123/youtube-dl-server
+            netr0m/youtag-dl
           tags: |
             type=ref,event=branch
             type=ref,event=pr
